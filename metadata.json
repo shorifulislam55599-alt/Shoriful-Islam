@@ -1,0 +1,6 @@
+{
+  "name": "Creative Portfolio - Designer & Video Editor",
+  "description": "A showcase portfolio for graphic design, professional video editing, and multidisciplinary creative work with interactive customizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

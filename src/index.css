@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+    background-color: #090d16;
+    color: #f1f5f9;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, .font-display, .font-headline {
+    font-family: 'Outfit', 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  }
+}
+
+/* Light Theme overrides for smooth dark/light toggle */
+html[data-theme="light"],
+html.light,
+body.light {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html[data-theme="light"] body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html[data-theme="light"] .bg-\[\#090d16\],
+html[data-theme="light"] .bg-\[\#050811\],
+html[data-theme="light"] .bg-\[\#0a0f1d\] {
+  background-color: #f8fafc !important;
+}
+
+html[data-theme="light"] .hero-main-name {
+  background-image: linear-gradient(to bottom, #0f172a, #1e293b, #334155) !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+html[data-theme="light"] .text-slate-100,
+html[data-theme="light"] .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] .text-slate-300 {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] .text-slate-400 {
+  color: #64748b !important;
+}
+
+html[data-theme="light"] .bg-slate-900,
+html[data-theme="light"] .bg-slate-900\/80,
+html[data-theme="light"] .bg-slate-900\/90,
+html[data-theme="light"] .bg-slate-900\/95,
+html[data-theme="light"] .bg-slate-950 {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+html[data-theme="light"] .bg-slate-800,
+html[data-theme="light"] .bg-slate-800\/80,
+html[data-theme="light"] .bg-slate-800\/90 {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+html[data-theme="light"] .border-slate-800,
+html[data-theme="light"] .border-slate-800\/80,
+html[data-theme="light"] .border-slate-700,
+html[data-theme="light"] .border-slate-900 {
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+html[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+html[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
